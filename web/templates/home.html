@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCII-ART-WEB</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <a href="/">
+                <h1 class="header_title">ASCII-ART-WEB</h1>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="content">
+            <form id="asciiForm" action="/ascii-art" method="POST">
+                <div>
+                    <textarea class="input" placeholder="Enter your text here" maxlength="500" autofocus name="text" id="text">{{.Text}}</textarea>
+                </div>
+                <div class="dropdown">
+                    <select class="banner" id="banners" name="banners">
+                        <option value="standard.txt">STANDARD</option>
+                        <option value="shadow.txt">SHADOW</option>
+                        <option value="thinkertoy.txt">THINKERTOY</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="button">PUSH</button>
+                </div>
+            </form>
+        </div>
+    </main>
+            <div class="pre">
+                <pre class="pre-style" cols="50" rows="5">{{.Output}}
+                </pre>
+            </div>
+    <footer class="footer">
+        <h3>by dnauryzbay aserikbay</h3>
+    </footer>
+</body>
+</html>

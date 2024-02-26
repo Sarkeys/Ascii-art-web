@@ -1,0 +1,110 @@
+/* Стилизация ссылок */
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+    background-image: url("../img/background.png"); /* Путь к фоновому изображению */
+}
+
+.input {
+    width: 520px;
+    height: 35px;
+    overflow: auto;
+    resize: none    ;
+    font: normal 16px/normal "Dancing Script", cursive;
+    opacity: 45%;
+    border: 1px solid #ea81e2; /* Граница */
+}
+
+.input:hover{
+    color: #002bff;
+}
+
+.header {
+    text-align: center;
+}
+
+
+.header_title {
+    font: italic normal normal 30px/1 "Dancing Script", cursive;
+    color: #fdd9fa;
+    opacity: 75%;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Выравнивание содержимого по центру по горизонтали */
+}
+
+.dropdown {
+    margin: 10px 0; /* Отступ снизу */
+}
+
+.banner,
+.button {
+    opacity: 75%;
+    font-weight: bold; /* Жирный текст */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ea81e2; /* Граница */
+    border-radius: 5px; /* Радиус границы */
+    background-color: #fff; /* Цвет фона */
+    cursor: pointer; /* Курсор */
+}
+
+
+
+.button {
+    background-color: #49cece; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    transition: background-color 0.3s ease; /* Анимация перехода */
+}
+
+.banner:hover{
+    color: white;
+    opacity: 50%;
+    background-color: #807676
+}
+.button:hover {
+    opacity: 50%;
+    background-color: #359a9a; /* Новый цвет фона при наведении */
+}
+
+.pre{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pre-style{
+    overflow: auto;
+    width: max-content;
+    height: max-content;
+    max-height: 500px;
+    color: white;
+    cursor: all-scroll;
+}
+.footer {
+    font: italic normal normal 30px/1 "Dancing Script", cursive;
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+@media only sceen and (max-width: 572px) {
+    .main{
+        
+    }
+    .pre{
+
+    }
+}

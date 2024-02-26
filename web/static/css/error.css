@@ -1,0 +1,70 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+  background-image: url("../img/background.png"); /* Путь к фоновому изображению */
+}
+
+.input {
+  width: 520px;
+  height: 35px;
+  overflow: auto;
+  resize: none    ;
+  font: normal 16px/normal "Dancing Script", cursive;
+  opacity: 45%;
+  border: 1px solid #ea81e2; /* Граница */
+}
+
+.input:hover{
+  color: #002bff;
+}
+
+.header {
+  text-align: center;
+}
+
+
+.header_title {
+  font: italic normal normal 30px/1 "Dancing Script", cursive;
+  color: #fdd9fa;
+  opacity: 75%;
+}
+
+.footer {
+  font: italic normal normal 30px/1 "Dancing Script", cursive;
+  position: fixed;
+  bottom: -20px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.content   {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Code, .error {
+  opacity: 50%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.Code {
+  font-size: 3rem;
+  color: #f00;
+}
+
+.error {
+  font-size: 2rem;
+  color: #00f;
+}
